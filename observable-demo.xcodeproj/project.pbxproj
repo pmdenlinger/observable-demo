@@ -12,6 +12,7 @@
 		CE8A3B992671117E0033694B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A3B982671117E0033694B /* Assets.xcassets */; };
 		CE8A3B9C2671117E0033694B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A3B9B2671117E0033694B /* Preview Assets.xcassets */; };
 		CE8A3BA4267111BE0033694B /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3BA3267111BE0033694B /* TimerData.swift */; };
+		CE8A3BA6267116910033694B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3BA5267116910033694B /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE8A3B9B2671117E0033694B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE8A3B9D2671117E0033694B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8A3BA3267111BE0033694B /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		CE8A3BA5267116910033694B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CE8A3B94267111750033694B /* observable_demoApp.swift */,
 				CE8A3B96267111750033694B /* ContentView.swift */,
+				CE8A3BA5267116910033694B /* SecondView.swift */,
 				CE8A3B982671117E0033694B /* Assets.xcassets */,
 				CE8A3B9D2671117E0033694B /* Info.plist */,
 				CE8A3B9A2671117E0033694B /* Preview Content */,
@@ -143,6 +146,7 @@
 			files = (
 				CE8A3B97267111750033694B /* ContentView.swift in Sources */,
 				CE8A3B95267111750033694B /* observable_demoApp.swift in Sources */,
+				CE8A3BA6267116910033694B /* SecondView.swift in Sources */,
 				CE8A3BA4267111BE0033694B /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
