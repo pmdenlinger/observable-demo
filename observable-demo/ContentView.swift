@@ -7,34 +7,40 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
-    
-    @StateObject var timerData: TimerData = TimerData()
-    
-    var body: some View {
+
+@StateObject var timerData: TimerData = TimerData()
+
+var body: some View {
     NavigationView {
-        VStack {
-            Text("Timer count = \(timerData.timeCount)")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
+         VStack {
+             Text("Timer count = \(timerData.timeCount)")
+             
+                 .font(.largeTitle)
+                 .fontWeight(.bold)
+                 .padding()
+             
+             Button(action: resetCount) {
+                 Text("Reset Counter")
+             }
             
-            Button(action: resetCount) {
-                Text("Reset count")
+            NavigationLink(destination: SecondView(timerData: timerData)) {
+                Text("Next Screen")
             }
-            }
-        }
-    }
-    func resetCount() {
-        timerData.resetCount()
-        
-    }
+            .padding()
+
+         }
+     }
+    .environmentObject(timerData)
+ }
+
+ func resetCount() {
+     timerData.resetCount()
+ }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+static var previews: some View {
+    ContentView()
+}
 }
