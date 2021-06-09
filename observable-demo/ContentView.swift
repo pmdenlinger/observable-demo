@@ -24,7 +24,7 @@ var body: some View {
                  Text("Reset Counter")
              }
             
-            NavigationLink(destination: SecondView(timerData: timerData)) {
+            NavigationLink(destination: SecondView()) {
                 Text("Next Screen")
             }
             .padding()
